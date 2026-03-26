@@ -1,0 +1,29 @@
+---
+- name: Fazer Deploy das Bases de Dados IoT (MinIO e InfluxDB)
+  hosts: cloud_server
+  become: yes
+  tasks:
+
+    - name: Criar diretório temporário para os manifestos no servidor
+      file:
+        path: /tmp/k8s-manifests
+        state: directory
+
+    - name: Copiar os manifestos locais para o servidor Cloud
+      copy:
+        src: ../k8s-manifests/
+        dest: /tmp/k8s-manifests/
+
+    - name: Aplicar 00-namespace.yaml
+      command: kubectl apply -f /tmp/k8s-manifests/00-namespace.yaml
+
+    - name: Aplicar 02-influxdb.yaml
+      command: kubectl apply -f /tmp/k8s-manifests/02-influxdb.yaml
+
+    - name: Verificar se os Pods estão a ser criados
+      command: kubectl get pods -n iot-surveillance
+      register: pod_status
+
+    - name: Mostrar o estado dos Pods na consola
+      debug:
+        var: pod_status.stdout_lines

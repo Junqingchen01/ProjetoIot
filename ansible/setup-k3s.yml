@@ -1,0 +1,37 @@
+---
+- name: Instalar e Configurar o Kubernetes (K3s)
+  hosts: cloud_server
+  become: yes 
+  tasks:
+
+    - name: Fazer o download do script de instalação do K3s
+      get_url:
+        url: https://get.k3s.io
+        dest: /tmp/k3s_install.sh
+        mode: '0755'
+
+    - name: Executar o script de instalação do K3s
+      command: /tmp/k3s_install.sh
+      environment:
+        INSTALL_K3S_VERSION: "{{ k3s_version }}"
+        INSTALL_K3S_EXEC: "--disable traefik"
+      
+    - name: Garantir que o serviço K3s está a correr e arranca com o sistema
+      systemd:
+        name: k3s
+        state: started
+        enabled: yes
+
+    - name: Aguardar que o node do Kubernetes fique 'Ready'
+      command: k3s kubectl get nodes
+      register: node_status
+      until: "'Ready' in node_status.stdout"
+      retries: 10
+      delay: 5
+
+    - name: Criar atalho para o comando kubectl
+      file:
+        src: /usr/local/bin/k3s
+        dest: /usr/local/bin/kubectl
+        state: link
+        force: yes
