@@ -208,7 +208,7 @@ def get_recent_sensor_data(minutos: int,device_id: Optional[str] = None):
     if device_id:
         query.append(f'  |> filter(fn: (r) => r["device_id"] == "{device_id}")')
         
-    query.append('  |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")')
+    query += ('  |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")')
     query = "\n".join(query)
     
     try:
