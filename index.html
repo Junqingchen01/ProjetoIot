@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard IoT - Mobilidade Urbana</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f7f6; }
+        .header { text-align: center; margin-bottom: 20px; }
+        .container { display: flex; gap: 20px; }
+        #map { height: 500px; flex: 2; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .side-panel { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+        .chart-container, .alerts-container { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .alerts-container { height: 200px; overflow-y: auto; }
+        .alert-item { background: #ffebee; color: #c62828; padding: 10px; margin-bottom: 10px; border-radius: 4px; border-left: 4px solid #c62828; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>Plataforma IoT - Monitorização Colaborativa</h2>
+    </div>
+
+    <div class="container">
+        <div id="map"></div>
+
+        <div class="side-panel">
+            <div class="alerts-container">
+                <h3>Alertas Recentes</h3>
+                <div id="alerts-list">Carregando alertas...</div>
+            </div>
+
+            <div class="chart-container">
+                <h3>Estatísticas de Velocidade (km/h)</h3>
+                <canvas id="speedChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    const API_BASE_URL = 'http://localhost:8000/api/v1';
+    const WS_URL = 'ws://localhost:8000/ws/alerts';
+    const API_KEY = 'SeiLa'; 
+    //alert(API_KEY)
+
+    // Inicializar mapa e gráfico
+    const map = L.map('map').setView([41.5503, -8.4200], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    const markersLayer = L.layerGroup().addTo(map);
+    
+    const ctx = document.getElementById('speedChart').getContext('2d');
+    const speedChart = new Chart(ctx, {
+        type: 'line',
+        data: { labels: [], datasets: [{ label: 'Velocidade', data: [], borderColor: '#0277bd' }] }
+    });
+
+    // Carregar dados iniciais via HTTP GET
+    async function loadInitialData() {
+        try {
+            // Buscar histórico de telemetria
+            const resSensor = await fetch(`${API_BASE_URL}/sensors?minutos=60&api_key=${API_KEY}`);
+            const dataSensor = await resSensor.json();
+            if(dataSensor.dados) {
+                updateMap(dataSensor.dados);
+                updateChart(dataSensor.dados);
+            }
+
+            // Buscar histórico de alertas
+            const resAlert = await fetch(`${API_BASE_URL}/alerts?minutos=60&api_key=${API_KEY}`);
+            const dataAlert = await resAlert.json();
+            if(dataAlert.dados) {
+                dataAlert.dados.forEach(addAlertToUI);
+            }
+        } catch (e) {
+            console.error("CORS não configurado ou backend não iniciado:", e);
+        }
+    }
+
+    // Funções auxiliares para atualizar mapa e gráfico
+    function updateMap(dados) {
+        markersLayer.clearLayers();
+        dados.forEach(d => {
+            const marker = L.circleMarker([d.lat, d.lon], { color: 'blue', radius: 5 });
+            marker.bindPopup(`<b>ID:</b> ${d.device_id}<br><b>Velocidade:</b> ${d.speed} km/h`);
+            markersLayer.addLayer(marker);
+        });
+    }
+    function updateChart(dados) {
+        const recentData = dados.slice(-10);
+        speedChart.data.labels = recentData.map(d => new Date(d.timestamp).toLocaleTimeString());
+        speedChart.data.datasets[0].data = recentData.map(d => d.speed);
+        speedChart.update();
+    }
+
+    // Adicionar alerta individual à interface
+    function addAlertToUI(alerta) {
+        const listDiv = document.getElementById('alerts-list');
+        const alertDiv = document.createElement('div');
+        alertDiv.className = 'alert-item';
+        alertDiv.innerHTML = `<strong>⚠️ ${alerta.event_type.toUpperCase()}</strong><br>
+                              Gatilho: ${alerta.trigger}<br>
+                              Hora: ${new Date(alerta.timestamp).toLocaleTimeString()}`;
+        listDiv.insertBefore(alertDiv, listDiv.firstChild); 
+    }
+
+    // ---------------------------------------------------------
+    // WebSocket em tempo real
+    // ---------------------------------------------------------
+    function connectWebSocket() {
+        const ws = new WebSocket(WS_URL);
+        
+        ws.onopen = function() {
+            console.log("✅ WebSocket Conectado com sucesso!");
+        };
+
+        ws.onmessage = function(event) {
+            const novoAlerta = JSON.parse(event.data);
+            console.log("🚨 Novo alerta recebido em tempo real:", novoAlerta);
+            
+            // Adicionar à lista de alertas
+            addAlertToUI(novoAlerta);
+            
+            // Marcar localização no mapa com círculo vermelho
+            const redMarker = L.circleMarker([novoAlerta.lat, novoAlerta.lon], { 
+                color: 'red', 
+                fillColor: '#f03', 
+                fillOpacity: 0.5, 
+                radius: 15 
+            }).addTo(map);
+            redMarker.bindPopup(`<b>🚨 ACIDENTE!</b><br>${novoAlerta.event_type}`).openPopup();
+        };
+
+        ws.onclose = function() {
+            console.log("❌ WebSocket Desconectado. Tentando reconectar em 3s...");
+            setTimeout(connectWebSocket, 3000);
+        };
+    }
+
+    // Executar após carregamento da página
+    loadInitialData();
+    connectWebSocket();
+
+    // Atualizar posições GPS a cada 30 segundos (WebSocket apenas para alertas)
+    setInterval(async () => {
+        const resSensor = await fetch(`${API_BASE_URL}/sensors?minutos=1&api_key=${API_KEY}`);
+        const dataSensor = await resSensor.json();
+        if(dataSensor.dados) updateMap(dataSensor.dados);
+    }, 30000);
+
+</script>
+</body>
+</html>
