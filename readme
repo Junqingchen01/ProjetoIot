@@ -1,3 +1,51 @@
-cd backend
+# Projeto IoT - Monitorização de Mobilidade Urbana
 
-uvicorn app.main:app --reload
+Este projeto é uma plataforma completa de monitorização de dispositivos IoT (como bicicletas) para mobilidade urbana. Ele permite o acompanhamento em tempo real de telemetria, detecção automática de incidentes e visualização em um dashboard interativo.
+
+## 🏗️ Arquitetura do Sistema
+
+- **Backend (FastAPI)**: Servidor Python que processa dados de sensores via HTTP e MQTT.
+- **Base de Dados (InfluxDB)**: Armazenamento otimizado para séries temporais (telemetria e alertas).
+- **Frontend (Dashboard)**: Interface web moderna usando Leaflet (mapas), Chart.js (gráficos) e WebSockets (alertas em tempo real).
+- **Infraestrutura**: Configurações para Docker e Kubernetes (K3s) para implantação escalável.
+
+## 📊 Estrutura de Dados
+
+### 📡 Telemetria (SensorData)
+Dados enviados periodicamente pelos dispositivos:
+- `device_id`: Identificador único do dispositivo.
+- `timestamp`: Data e hora da leitura.
+- `lat`, `lon`: Coordenadas geográficas.
+- `speed`: Velocidade atual (km/h).
+- `accel_x, accel_y, accel_z`: Dados do acelerômetro de 3 eixos.
+- `battery`: Nível de bateria (%).
+
+### 🚨 Alertas (AlertData)
+Gerados automaticamente pelo sistema ou enviados por tópicos de emergência:
+- `event_type`: Tipo do incidente (ex: Fall Accident, Hard Brake, Traffic Jam).
+- `trigger`: O que disparou o alerta (ex: Peak Accel Exceeded).
+- `speed`, `accel_xyz`: Instantâneo dos dados no momento do incidente para análise.
+
+## 🚀 Funcionalidades do Dashboard
+
+1. **Mapa em Tempo Real**: Visualização da posição atual de todos os dispositivos ativos.
+2. **Alertas Inteligentes**:
+   - Detecção de quedas baseada em picos de aceleração.
+   - Detecção de travagens bruscas.
+   - Detecção de congestionamentos baseada em baixa velocidade prolongada.
+3. **Localização Rápida**: Botão "Localizar" em cada alerta para mover o mapa instantaneamente para o local do incidente com zoom detalhado.
+4. **Gráfico de Velocidade**: Monitorização das tendências de velocidade dos dispositivos.
+5. **Tema Dinâmico**: Alternância entre modo claro e escuro.
+
+## 🛠️ Como Executar
+
+1. **Iniciar Infraestrutura**: Certifique-se de que o Docker está a correr e inicie o InfluxDB.
+2. **Configurar Backend**:
+   - `cd backend`
+   - Instale as dependências: `pip install -r requirements.txt`
+   - Configure o ficheiro `.env` com os tokens do InfluxDB.
+   - Inicie o servidor: `uvicorn app.main:app --reload`
+3. **Abrir Frontend**: Abra o ficheiro `index.html` num navegador (ou via servidor local).
+
+---
+*Desenvolvido para monitorização colaborativa e segurança na mobilidade urbana.*

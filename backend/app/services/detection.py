@@ -18,14 +18,18 @@ def create_alert(sensor: SensorData, event_type: str, trigger: str) -> AlertData
         timestamp=sensor.timestamp or datetime.now(timezone.utc),
         lat=sensor.lat,
         lon=sensor.lon,
-        trigger=trigger
+        trigger=trigger,
+        speed=sensor.speed,
+        accel_x=sensor.accel_x,
+        accel_y=sensor.accel_y,
+        accel_z=sensor.accel_z
     )
     
 def analyze_telemetry(data: SensorData) -> AlertData | None:
     
     if data.device_id not in device_states:
         device_states[data.device_id] = {
-            "jam_Start_time": None
+            "jam_start_time": None
         }
     state = device_states[data.device_id]
     

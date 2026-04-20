@@ -11,3 +11,7 @@ class AlertData(BaseModel):
     lat: float        
     lon: float
     trigger: str
+    speed: Optional[float] = None
+    accel_x: Optional[float] = None
+    accel_y: Optional[float] = None
+    accel_z: Optional[float] = None

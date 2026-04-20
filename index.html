@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IoT Dashboard - Mobilidade Urbana</title>
+    <link rel="icon" href="data:,">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -145,11 +146,11 @@
         }
 
         .alerts-container {
-            height: 280px;
+            height: 400px;
         }
 
         #alerts-list {
-            height: 200px;
+            height: 320px;
             overflow-y: auto;
             padding-right: 6px;
         }
@@ -171,6 +172,30 @@
             margin-bottom: 12px;
             border-radius: 8px;
             animation: slideIn 0.3s ease;
+            position: relative;
+        }
+
+        .locate-btn {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: var(--danger);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: var(--transition);
+            box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+        }
+
+        .locate-btn:hover {
+            transform: scale(1.05);
+            background: #c0392b;
         }
 
         .alert-item strong {
@@ -236,7 +261,23 @@
                     <i class="fas fa-tachometer-alt"></i> Estatísticas de Velocidade (km/h)
                 </div>
                 <div class="card-body">
-                    <canvas id="speedChart"></canvas>
+                    <div id="stats-summary" style="display: flex; justify-content: space-around; margin-bottom: 15px; text-align: center;">
+                        <div>
+                            <div style="font-size: 12px; color: var(--text-light);">MÁXIMA</div>
+                            <div id="max-speed" style="font-size: 20px; font-weight: bold; color: var(--danger);">0.0</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 12px; color: var(--text-light);">MÉDIA</div>
+                            <div id="avg-speed" style="font-size: 20px; font-weight: bold; color: var(--primary);">0.0</div>
+                        </div>
+                        <div>
+                            <div style="font-size: 12px; color: var(--text-light);">TOTAL PONTOS</div>
+                            <div id="total-points" style="font-size: 20px; font-weight: bold; color: var(--text);">0</div>
+                        </div>
+                    </div>
+                    <div style="height: 200px;">
+                        <canvas id="speedChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -247,6 +288,12 @@
     const API_BASE_URL = 'http://localhost:8000/api/v1';
     const WS_URL = 'ws://localhost:8000/ws/alerts';
     const API_KEY = 'SeiLa'; // Certifique-se de que é a chave exata do seu .env
+
+    // Função auxiliar para formatar texto (remover underscores e capitalizar)
+    function formatText(text) {
+        if (!text) return "";
+        return text.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+    }
 
     // Alternância entre tema claro e escuro
     const themeBtn = document.getElementById('themeBtn');
@@ -292,7 +339,7 @@
     async function loadInitialData() {
         try {
             // 🚨 CORREÇÃO: Enviando a API_KEY no Header (X-API-Key)
-            const resSensor = await fetch(`${API_BASE_URL}/sensors?minutos=60`, {
+            const resSensor = await fetch(`${API_BASE_URL}/sensors?minutos=10000000000`, {
                 method: 'GET',
                 headers: { 'X-API-Key': API_KEY }
             });
@@ -303,7 +350,7 @@
             }
 
             // 🚨 CORREÇÃO: Enviando a API_KEY no Header
-            const resAlert = await fetch(`${API_BASE_URL}/alerts?minutos=60`, {
+            const resAlert = await fetch(`${API_BASE_URL}/alerts?minutos=10000000000`, {
                 method: 'GET',
                 headers: { 'X-API-Key': API_KEY }
             });
@@ -335,11 +382,24 @@
         });
     }
 
-    // Atualiza o gráfico com os dados de velocidade mais recentes
+    // Atualiza o gráfico de velocidade com novos dados
     function updateChart(dados) {
-        const recentData = dados.slice(-12);
-        speedChart.data.labels = recentData.map(d => new Date(d.timestamp).toLocaleTimeString());
-        speedChart.data.datasets[0].data = recentData.map(d => d.speed);
+        if (!dados || dados.length === 0) return;
+        
+        const labels = dados.map(d => new Date(d.timestamp).toLocaleTimeString());
+        const speeds = dados.map(d => d.speed || 0);
+
+        // Atualiza estatísticas no topo do gráfico
+        const maxSpeed = Math.max(...speeds);
+        const avgSpeed = speeds.reduce((a, b) => a + b, 0) / speeds.length;
+        
+        document.getElementById('max-speed').innerText = maxSpeed.toFixed(1);
+        document.getElementById('avg-speed').innerText = avgSpeed.toFixed(1);
+        document.getElementById('total-points').innerText = speeds.length;
+
+        // Mostra apenas os últimos 12 pontos no gráfico para manter a visualização limpa
+        speedChart.data.labels = labels.slice(-12);
+        speedChart.data.datasets[0].data = speeds.slice(-12);
         speedChart.update();
     }
 
@@ -351,13 +411,39 @@
         const alertDiv = document.createElement('div');
         alertDiv.className = 'alert-item';
         alertDiv.innerHTML = `
-            <strong><i class="fas fa-exclamation-triangle"></i> ${alerta.event_type.toUpperCase()}</strong>
-            <div>Gatilho: ${alerta.trigger}</div>
-            <div style="font-size:12px; color:var(--text-light)">
-                <i class="far fa-clock"></i> ${new Date(alerta.timestamp).toLocaleTimeString()}
+            <strong><i class="fas fa-exclamation-triangle"></i> ${formatText(alerta.event_type)}</strong>
+            <button class="locate-btn" onclick="locateAlert(${alerta.lat}, ${alerta.lon}, '${alerta.event_type}')">
+                <i class="fas fa-map-marker-alt"></i> Localizar
+            </button>
+            <div style="font-size:13px; margin-top:4px;">
+                <div><i class="fas fa-microchip"></i> ID: ${alerta.device_id}</div>
+                <div><i class="fas fa-bullseye"></i> Gatilho: ${formatText(alerta.trigger)}</div>
+                <div><i class="fas fa-tachometer-alt"></i> Velocidade: ${alerta.speed ? alerta.speed.toFixed(1) : 0} km/h</div>
+                <div><i class="fas fa-cube"></i> Accel (X,Y,Z): ${alerta.accel_x ? alerta.accel_x.toFixed(1) : 0}, ${alerta.accel_y ? alerta.accel_y.toFixed(1) : 0}, ${alerta.accel_z ? alerta.accel_z.toFixed(1) : 0}</div>
+                <div><i class="fas fa-map-marker-alt"></i> Loc: ${alerta.lat.toFixed(4)}, ${alerta.lon.toFixed(4)}</div>
+            </div>
+            <div style="font-size:11px; color:var(--text-light); margin-top:6px; text-align:right;">
+                <i class="far fa-clock"></i> ${new Date(alerta.timestamp).toLocaleString()}
             </div>
         `;
         listDiv.insertBefore(alertDiv, listDiv.firstChild);
+    }
+
+    // Função para localizar o alerta no mapa
+    function locateAlert(lat, lon, type) {
+        map.setView([lat, lon], 17, { animate: true });
+        
+        const pulseMarker = L.circleMarker([lat, lon], {
+            color: '#e74c3c',
+            fillColor: '#e74c3c',
+            fillOpacity: 0.8,
+            radius: 12
+        }).addTo(map)
+        .bindPopup(`<div style="color:#e74c3c; font-weight:bold">🚨 LOCAL DO ALERTA</div>${formatText(type)}`)
+        .openPopup();
+
+        // Remove o destaque após 5 segundos
+        setTimeout(() => map.removeLayer(pulseMarker), 5000);
     }
 
     // Conexão WebSocket para receber alertas em tempo real
