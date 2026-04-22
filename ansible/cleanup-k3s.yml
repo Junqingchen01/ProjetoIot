@@ -1,0 +1,37 @@
+---
+- name: Desinstalar K3s e Limpar Configurações
+  hosts: server
+  become: yes
+  tasks:
+    - name: Verificar se o script de desinstalação do K3s existe
+      stat:
+        path: /usr/local/bin/k3s-uninstall.sh
+      register: uninstall_script
+
+    - name: Executar o script de desinstalação do K3s
+      command: /usr/local/bin/k3s-uninstall.sh
+      when: uninstall_script.stat.exists
+
+    - name: Remover o atalho do kubectl criado anteriormente
+      file:
+        path: /usr/local/bin/kubectl
+        state: absent
+
+    - name: Remover diretório temporário de manifestos
+      file:
+        path: /tmp/k8s-manifests
+        state: absent
+
+    - name: Remover o script de instalação temporário
+      file:
+        path: /tmp/k3s_install.sh
+        state: absent
+
+    - name: Limpar diretórios de dados residuais (Opcional - CUIDADO)
+      file:
+        path: "{{ item }}"
+        state: absent
+      loop:
+        - /var/lib/rancher/k3s
+        - /etc/rancher/k3s
+        - ~/.kube

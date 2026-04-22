@@ -1,0 +1,106 @@
+---
+- name: Setup Automático do Backend IoT com Docker (Versão Corrigida)
+  hosts: localhost
+  become: yes
+  vars:
+    project_path: "/home/netsim/Desktop/Iot_Project/backend"
+
+  tasks:
+    - name: "[Cleanup] Remover pacotes de container conflituantes"
+      apt:
+        name:
+          - containerd.io
+          - containerd
+          - docker
+          - docker-engine
+          - docker.io
+          - runc
+        state: absent
+        force: yes
+
+    - name: "[Docker] Instalar Docker e Docker Compose (Versão Limpa)"
+      apt:
+        name: 
+          - docker.io
+          - docker-compose
+        state: present
+        update_cache: yes
+
+    - name: "[Cleanup] Parar serviço Systemd antigo (se existir)"
+      systemd:
+        name: iot-backend
+        state: stopped
+        enabled: no
+      ignore_errors: yes
+
+    - name: "[Files] Atualizar requirements.txt"
+      copy:
+        dest: "{{ project_path }}/requirements.txt"
+        content: |
+          fastapi
+          uvicorn[standard]
+          pydantic-settings
+          python-multipart
+          influxdb-client
+          paho-mqtt
+          python-dotenv
+
+    - name: "[Files] Criar Dockerfile"
+      copy:
+        dest: "{{ project_path }}/Dockerfile"
+        content: |
+          FROM python:3.10-slim
+          WORKDIR /app
+          RUN apt-get update && apt-get install -y --no-install-recommends build-essential && rm -rf /var/lib/apt/lists/*
+          COPY requirements.txt .
+          RUN pip install --no-cache-dir -r requirements.txt
+          COPY . .
+          ENV PYTHONPATH=/app
+          CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+    - name: "[Files] Criar docker-compose.yml"
+      copy:
+        dest: "{{ project_path }}/docker-compose.yml"
+        content: |
+          version: '3.8'
+          services:
+            iot-backend:
+              build: .
+              container_name: iot-backend
+              restart: always
+              ports:
+                - "8000:8000"
+              env_file:
+                - .env
+              volumes:
+                - .:/app
+              environment:
+                - PYTHONPATH=/app
+
+    - name: "[Files] Garantir configuração do .env"
+      copy:
+        dest: "{{ project_path }}/.env"
+        content: |
+          INFLUX_TOKEN=Nn8dHuXk5odMxrKMzAwQI6OprwI28IgkI3SXYg-ZPE-5_5AwKlzH9uFXvaE9Tr3N7M_64tH2HaMLgii91ub0PQ==
+          INFLUX_ORG=uminho_mei
+          INFLUX_BUCKET=Iot
+          INFLUX_URL=http://100.68.134.61:32086
+          API_KEY_EDGE="SeiLa"
+          MQTT_BROKER=100.68.134.61
+          MQTT_PORT=31883
+          MQTT_TLS_ENABLED=False
+          MQTT_USERNAME=admin
+          MQTT_PASSWORD=password123
+
+    - name: "[Docker] Build e Start do Contentor"
+      shell: "docker-compose up -d --build"
+      args:
+        chdir: "{{ project_path }}"
+
+    - name: "[Docker] Verificar se o backend está online"
+      shell: "docker ps --filter name=iot-backend"
+      register: docker_status
+      changed_when: false
+
+    - debug:
+        msg: "Backend a correr via Docker! Use 'docker logs -f iot-backend' para ver os logs."

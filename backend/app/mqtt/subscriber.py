@@ -72,7 +72,7 @@ def on_message(client, userdata, msg):
         # Isto vai imprimir as linhas a vermelho no terminal dizendo exatamente ONDE falhou
         traceback.print_exc()   
 
-mqtt_client = mqtt.Client()
+mqtt_client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
 
 if settings.MQTT_USERNAME and settings.MQTT_PASSWORD:
     mqtt_client.username_pw_set(settings.MQTT_USERNAME,settings.MQTT_PASSWORD)

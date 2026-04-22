@@ -5,6 +5,7 @@ class Settings(BaseSettings):
     INFLUX_ORG: str
     INFLUX_BUCKET: str = "Iot"
     API_KEY_EDGE: str
+    INFLUX_URL: str
         
     api_host: str = "0.0.0.0"
     api_port: int = 8000

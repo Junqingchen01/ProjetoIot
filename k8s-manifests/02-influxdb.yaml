@@ -1,23 +1,19 @@
----
-# 1. Armazenamento Persistente para o InfluxDB
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: influxdb-pvc
-  namespace: iot
+  namespace: iot-surveillance
 spec:
-  accessModes:
-    - ReadWriteOnce
+  accessModes: [ReadWriteOnce]
   resources:
     requests:
       storage: 5Gi
-
 ---
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: influxdb
-  namespace: iot
+  namespace: iot-surveillance
 spec:
   serviceName: influxdb-service
   replicas: 1
@@ -32,9 +28,6 @@ spec:
       containers:
       - name: influxdb
         image: influxdb:2.7
-        ports:
-        - containerPort: 8086
-          name: api
         env:
         - name: DOCKER_INFLUXDB_INIT_MODE
           value: setup
@@ -53,19 +46,16 @@ spec:
       - name: data
         persistentVolumeClaim:
           claimName: influxdb-pvc
-
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: influxdb-service
-  namespace: iot
+  namespace: iot-surveillance
 spec:
   type: NodePort
   ports:
-    - name: api
-      port: 8086
-      targetPort: 8086
+    - port: 8086
       nodePort: 32086
   selector:
     app: influxdb

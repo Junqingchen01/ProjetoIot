@@ -4,3 +4,4 @@ pydantic-settings
 python-multipart
 influxdb-client
 paho-mqtt
+python-dotenv
