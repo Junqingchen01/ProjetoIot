@@ -4,7 +4,7 @@
   become: yes
   vars:
     project_path: "/home/netsim/Desktop/Iot_Project/backend"
-    influx_token: "{{ lookup('env', 'INFLUX_TOKEN') | default('iot_demo_token', true) }}"
+    influx_token: "{{ lookup('env', 'INFLUX_TOKEN') | default('adminadmin', true) }}"
     api_key_edge: "{{ lookup('env', 'API_KEY_EDGE') | default('iot', true) }}"
     mqtt_username: "{{ lookup('env', 'MQTT_USERNAME') | default('iot', true) }}"
     mqtt_password: "{{ lookup('env', 'MQTT_PASSWORD') | default('iot', true) }}"

@@ -41,8 +41,8 @@ API key: iot
 MQTT username: iot
 MQTT password: iot
 InfluxDB username: admin
-InfluxDB password: iot_demo_password
-InfluxDB token: iot_demo_token
+InfluxDB password: adminadmin
+InfluxDB token: adminadmin
 ```
 
 ## Health Checks

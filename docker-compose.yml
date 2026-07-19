@@ -10,10 +10,10 @@ services:
     environment:
       DOCKER_INFLUXDB_INIT_MODE: setup
       DOCKER_INFLUXDB_INIT_USERNAME: ${INFLUX_USERNAME:-admin}
-      DOCKER_INFLUXDB_INIT_PASSWORD: ${INFLUX_PASSWORD:-iot_demo_password}
+      DOCKER_INFLUXDB_INIT_PASSWORD: ${INFLUX_PASSWORD:-adminadmin}
       DOCKER_INFLUXDB_INIT_ORG: ${INFLUX_ORG:-uminho_mei}
       DOCKER_INFLUXDB_INIT_BUCKET: ${INFLUX_BUCKET:-Iot}
-      DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: ${INFLUX_TOKEN:-iot_demo_token}
+      DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: ${INFLUX_TOKEN:-adminadmin}
     volumes:
       - influxdb-data:/var/lib/influxdb2
     healthcheck:
@@ -56,7 +56,7 @@ services:
       INFLUX_URL: http://influxdb:8086
       INFLUX_ORG: ${INFLUX_ORG:-uminho_mei}
       INFLUX_BUCKET: ${INFLUX_BUCKET:-Iot}
-      INFLUX_TOKEN: ${INFLUX_TOKEN:-iot_demo_token}
+      INFLUX_TOKEN: ${INFLUX_TOKEN:-adminadmin}
       API_KEY_EDGE: ${API_KEY_EDGE:-iot}
       MQTT_BROKER: mosquitto
       MQTT_PORT: 8883

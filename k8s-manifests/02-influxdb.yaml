@@ -6,8 +6,8 @@ metadata:
 type: Opaque
 stringData:
   username: admin
-  password: iot_demo_password
-  admin-token: iot_demo_token
+  password: adminadmin
+  admin-token: adminadmin
 ---
 apiVersion: v1
 kind: ConfigMap
