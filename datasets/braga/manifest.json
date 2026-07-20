@@ -80,8 +80,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\normal_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\normal_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_001\\normal_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_001\\normal_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_001"
     },
     {
       "scenario_id": "normal_stop_and_go_001",
@@ -92,8 +94,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\normal_stop_and_go_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\normal_stop_and_go_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_002\\normal_stop_and_go_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_002\\normal_stop_and_go_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_002"
     },
     {
       "scenario_id": "normal_rough_pavement_001",
@@ -104,8 +108,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\normal_rough_pavement_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\normal_rough_pavement_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_003\\normal_rough_pavement_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_003\\normal_rough_pavement_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_003"
     },
     {
       "scenario_id": "hard_brake_001",
@@ -118,8 +124,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\hard_brake_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\hard_brake_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_004\\hard_brake_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_004\\hard_brake_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_004"
     },
     {
       "scenario_id": "fall_accident_001",
@@ -132,8 +140,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\fall_accident_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\fall_accident_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_005\\fall_accident_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_005\\fall_accident_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_005"
     },
     {
       "scenario_id": "traffic_jam_001",
@@ -146,8 +156,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\traffic_jam_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\traffic_jam_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_006\\traffic_jam_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_006\\traffic_jam_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_006"
     },
     {
       "scenario_id": "mixed_brake_jam_001",
@@ -161,8 +173,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\mixed_brake_jam_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\mixed_brake_jam_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_007\\mixed_brake_jam_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_007\\mixed_brake_jam_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_007"
     },
     {
       "scenario_id": "normal_short_center_001",
@@ -173,8 +187,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\normal_short_center_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\normal_short_center_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_008\\normal_short_center_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_008\\normal_short_center_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_008"
     },
     {
       "scenario_id": "normal_commute_002",
@@ -185,8 +201,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\normal_commute_002\\telemetry.csv",
-      "truth_json": "datasets\\braga\\normal_commute_002\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_009\\normal_commute_002\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_009\\normal_commute_002\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_009"
     },
     {
       "scenario_id": "normal_long_cross_city_001",
@@ -197,8 +215,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\normal_long_cross_city_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\normal_long_cross_city_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_010\\normal_long_cross_city_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_010\\normal_long_cross_city_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_010"
     },
     {
       "scenario_id": "normal_evening_return_001",
@@ -209,8 +229,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\normal_evening_return_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\normal_evening_return_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_011\\normal_evening_return_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_011\\normal_evening_return_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_011"
     },
     {
       "scenario_id": "normal_peripheral_001",
@@ -221,8 +243,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\normal_peripheral_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\normal_peripheral_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_012\\normal_peripheral_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_012\\normal_peripheral_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_012"
     },
     {
       "scenario_id": "hard_brake_roundabout_002",
@@ -235,8 +259,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\hard_brake_roundabout_002\\telemetry.csv",
-      "truth_json": "datasets\\braga\\hard_brake_roundabout_002\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_013\\hard_brake_roundabout_002\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_013\\hard_brake_roundabout_002\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_013"
     },
     {
       "scenario_id": "hard_brake_crosswalk_003",
@@ -249,8 +275,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\hard_brake_crosswalk_003\\telemetry.csv",
-      "truth_json": "datasets\\braga\\hard_brake_crosswalk_003\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_014\\hard_brake_crosswalk_003\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_014\\hard_brake_crosswalk_003\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_014"
     },
     {
       "scenario_id": "fall_accident_curve_002",
@@ -263,8 +291,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\fall_accident_curve_002\\telemetry.csv",
-      "truth_json": "datasets\\braga\\fall_accident_curve_002\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_015\\fall_accident_curve_002\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_015\\fall_accident_curve_002\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_015"
     },
     {
       "scenario_id": "fall_accident_long_003",
@@ -277,8 +307,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\fall_accident_long_003\\telemetry.csv",
-      "truth_json": "datasets\\braga\\fall_accident_long_003\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_016\\fall_accident_long_003\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_016\\fall_accident_long_003\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_016"
     },
     {
       "scenario_id": "traffic_jam_center_002",
@@ -291,8 +323,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\traffic_jam_center_002\\telemetry.csv",
-      "truth_json": "datasets\\braga\\traffic_jam_center_002\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_017\\traffic_jam_center_002\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_017\\traffic_jam_center_002\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_017"
     },
     {
       "scenario_id": "traffic_jam_long_003",
@@ -305,8 +339,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\traffic_jam_long_003\\telemetry.csv",
-      "truth_json": "datasets\\braga\\traffic_jam_long_003\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_018\\traffic_jam_long_003\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_018\\traffic_jam_long_003\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_018"
     },
     {
       "scenario_id": "mixed_brake_jam_002",
@@ -320,8 +356,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\mixed_brake_jam_002\\telemetry.csv",
-      "truth_json": "datasets\\braga\\mixed_brake_jam_002\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_019\\mixed_brake_jam_002\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_019\\mixed_brake_jam_002\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_019"
     },
     {
       "scenario_id": "mixed_brake_jam_003",
@@ -335,8 +373,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\mixed_brake_jam_003\\telemetry.csv",
-      "truth_json": "datasets\\braga\\mixed_brake_jam_003\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_020\\mixed_brake_jam_003\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_020\\mixed_brake_jam_003\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_020"
     },
     {
       "scenario_id": "obstacle_risk_001",
@@ -349,8 +389,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\obstacle_risk_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\obstacle_risk_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_021\\obstacle_risk_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_021\\obstacle_risk_001\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_021"
     },
     {
       "scenario_id": "bike_normal_center_001",
@@ -371,8 +413,10 @@
         "lat": 41.54952,
         "lon": -8.42686
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_center_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_center_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_001\\bike_normal_center_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_001\\bike_normal_center_001\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_001"
     },
     {
       "scenario_id": "bike_commute_center_002",
@@ -393,8 +437,10 @@
         "lat": 41.55172,
         "lon": -8.4229
       },
-      "telemetry_csv": "datasets\\braga\\bike_commute_center_002\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_commute_center_002\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_002\\bike_commute_center_002\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_002\\bike_commute_center_002\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_002"
     },
     {
       "scenario_id": "bike_evening_return_003",
@@ -415,8 +461,10 @@
         "lat": 41.55323,
         "lon": -8.42706
       },
-      "telemetry_csv": "datasets\\braga\\bike_evening_return_003\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_evening_return_003\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_003\\bike_evening_return_003\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_003\\bike_evening_return_003\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_003"
     },
     {
       "scenario_id": "bike_hard_brake_center_001",
@@ -439,8 +487,10 @@
         "lat": 41.54767,
         "lon": -8.43402
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_center_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_center_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_004\\bike_hard_brake_center_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_004\\bike_hard_brake_center_001\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_004"
     },
     {
       "scenario_id": "bike_fall_accident_center_001",
@@ -463,8 +513,10 @@
         "lat": 41.54366,
         "lon": -8.42308
       },
-      "telemetry_csv": "datasets\\braga\\bike_fall_accident_center_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_fall_accident_center_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_005\\bike_fall_accident_center_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_005\\bike_fall_accident_center_001\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_005"
     },
     {
       "scenario_id": "bike_traffic_jam_center_001",
@@ -487,8 +539,10 @@
         "lat": 41.55383,
         "lon": -8.41226
       },
-      "telemetry_csv": "datasets\\braga\\bike_traffic_jam_center_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_traffic_jam_center_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_006\\bike_traffic_jam_center_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_006\\bike_traffic_jam_center_001\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_006"
     },
     {
       "scenario_id": "bike_obstacle_risk_center_001",
@@ -511,8 +565,10 @@
         "lat": 41.54883,
         "lon": -8.42148
       },
-      "telemetry_csv": "datasets\\braga\\bike_obstacle_risk_center_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_obstacle_risk_center_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_007\\bike_obstacle_risk_center_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_007\\bike_obstacle_risk_center_001\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_007"
     },
     {
       "scenario_id": "bike_mixed_brake_jam_center_001",
@@ -536,8 +592,10 @@
         "lat": 41.55795,
         "lon": -8.40787
       },
-      "telemetry_csv": "datasets\\braga\\bike_mixed_brake_jam_center_001\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_mixed_brake_jam_center_001\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_008\\bike_mixed_brake_jam_center_001\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_008\\bike_mixed_brake_jam_center_001\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_008"
     },
     {
       "scenario_id": "scooter_normal_center_022",
@@ -548,8 +606,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_normal_center_022\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_normal_center_022\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_022\\scooter_normal_center_022\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_022\\scooter_normal_center_022\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_022"
     },
     {
       "scenario_id": "scooter_normal_commute_023",
@@ -560,8 +620,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_normal_commute_023\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_normal_commute_023\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_023\\scooter_normal_commute_023\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_023\\scooter_normal_commute_023\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_023"
     },
     {
       "scenario_id": "scooter_normal_long_024",
@@ -572,8 +634,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_normal_long_024\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_normal_long_024\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_024\\scooter_normal_long_024\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_024\\scooter_normal_long_024\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_024"
     },
     {
       "scenario_id": "scooter_hard_brake_025",
@@ -586,8 +650,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_hard_brake_025\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_hard_brake_025\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_025\\scooter_hard_brake_025\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_025\\scooter_hard_brake_025\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_025"
     },
     {
       "scenario_id": "scooter_hard_brake_crossing_026",
@@ -600,8 +666,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_hard_brake_crossing_026\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_hard_brake_crossing_026\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_026\\scooter_hard_brake_crossing_026\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_026\\scooter_hard_brake_crossing_026\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_026"
     },
     {
       "scenario_id": "scooter_fall_accident_027",
@@ -614,8 +682,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_fall_accident_027\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_fall_accident_027\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_027\\scooter_fall_accident_027\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_027\\scooter_fall_accident_027\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_027"
     },
     {
       "scenario_id": "scooter_fall_curve_028",
@@ -628,8 +698,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_fall_curve_028\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_fall_curve_028\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_028\\scooter_fall_curve_028\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_028\\scooter_fall_curve_028\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_028"
     },
     {
       "scenario_id": "scooter_traffic_jam_029",
@@ -642,8 +714,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_traffic_jam_029\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_traffic_jam_029\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_029\\scooter_traffic_jam_029\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_029\\scooter_traffic_jam_029\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_029"
     },
     {
       "scenario_id": "scooter_traffic_jam_long_030",
@@ -656,8 +730,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_traffic_jam_long_030\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_traffic_jam_long_030\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_030\\scooter_traffic_jam_long_030\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_030\\scooter_traffic_jam_long_030\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_030"
     },
     {
       "scenario_id": "scooter_obstacle_risk_031",
@@ -670,8 +746,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_obstacle_risk_031\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_obstacle_risk_031\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_031\\scooter_obstacle_risk_031\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_031\\scooter_obstacle_risk_031\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_031"
     },
     {
       "scenario_id": "scooter_mixed_brake_jam_032",
@@ -685,8 +763,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_mixed_brake_jam_032\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_mixed_brake_jam_032\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_032\\scooter_mixed_brake_jam_032\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_032\\scooter_mixed_brake_jam_032\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_032"
     },
     {
       "scenario_id": "scooter_normal_center_033",
@@ -697,8 +777,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_normal_center_033\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_normal_center_033\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_033\\scooter_normal_center_033\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_033\\scooter_normal_center_033\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_033"
     },
     {
       "scenario_id": "scooter_normal_commute_034",
@@ -709,8 +791,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_normal_commute_034\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_normal_commute_034\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_034\\scooter_normal_commute_034\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_034\\scooter_normal_commute_034\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_034"
     },
     {
       "scenario_id": "scooter_normal_long_035",
@@ -721,8 +805,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_normal_long_035\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_normal_long_035\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_035\\scooter_normal_long_035\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_035\\scooter_normal_long_035\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_035"
     },
     {
       "scenario_id": "scooter_hard_brake_036",
@@ -735,8 +821,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_hard_brake_036\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_hard_brake_036\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_036\\scooter_hard_brake_036\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_036\\scooter_hard_brake_036\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_036"
     },
     {
       "scenario_id": "scooter_hard_brake_crossing_037",
@@ -749,8 +837,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_hard_brake_crossing_037\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_hard_brake_crossing_037\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_037\\scooter_hard_brake_crossing_037\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_037\\scooter_hard_brake_crossing_037\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_037"
     },
     {
       "scenario_id": "scooter_fall_accident_038",
@@ -763,8 +853,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_fall_accident_038\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_fall_accident_038\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_038\\scooter_fall_accident_038\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_038\\scooter_fall_accident_038\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_038"
     },
     {
       "scenario_id": "scooter_fall_curve_039",
@@ -777,8 +869,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_fall_curve_039\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_fall_curve_039\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_039\\scooter_fall_curve_039\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_039\\scooter_fall_curve_039\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_039"
     },
     {
       "scenario_id": "scooter_traffic_jam_040",
@@ -791,8 +885,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_traffic_jam_040\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_traffic_jam_040\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_040\\scooter_traffic_jam_040\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_040\\scooter_traffic_jam_040\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_040"
     },
     {
       "scenario_id": "scooter_traffic_jam_long_041",
@@ -805,8 +901,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_traffic_jam_long_041\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_traffic_jam_long_041\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_041\\scooter_traffic_jam_long_041\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_041\\scooter_traffic_jam_long_041\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_041"
     },
     {
       "scenario_id": "scooter_obstacle_risk_042",
@@ -819,8 +917,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_obstacle_risk_042\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_obstacle_risk_042\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_042\\scooter_obstacle_risk_042\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_042\\scooter_obstacle_risk_042\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_042"
     },
     {
       "scenario_id": "scooter_mixed_brake_jam_043",
@@ -834,8 +934,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_mixed_brake_jam_043\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_mixed_brake_jam_043\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_043\\scooter_mixed_brake_jam_043\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_043\\scooter_mixed_brake_jam_043\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_043"
     },
     {
       "scenario_id": "scooter_normal_center_044",
@@ -846,8 +948,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_normal_center_044\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_normal_center_044\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_044\\scooter_normal_center_044\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_044\\scooter_normal_center_044\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_044"
     },
     {
       "scenario_id": "scooter_normal_commute_045",
@@ -858,8 +962,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_normal_commute_045\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_normal_commute_045\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_045\\scooter_normal_commute_045\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_045\\scooter_normal_commute_045\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_045"
     },
     {
       "scenario_id": "scooter_normal_long_046",
@@ -870,8 +976,10 @@
       "event_types": [],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_normal_long_046\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_normal_long_046\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_046\\scooter_normal_long_046\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_046\\scooter_normal_long_046\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_046"
     },
     {
       "scenario_id": "scooter_hard_brake_047",
@@ -884,8 +992,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_hard_brake_047\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_hard_brake_047\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_047\\scooter_hard_brake_047\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_047\\scooter_hard_brake_047\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_047"
     },
     {
       "scenario_id": "scooter_hard_brake_crossing_048",
@@ -898,8 +1008,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_hard_brake_crossing_048\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_hard_brake_crossing_048\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_048\\scooter_hard_brake_crossing_048\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_048\\scooter_hard_brake_crossing_048\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_048"
     },
     {
       "scenario_id": "scooter_fall_accident_049",
@@ -912,8 +1024,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_fall_accident_049\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_fall_accident_049\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_049\\scooter_fall_accident_049\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_049\\scooter_fall_accident_049\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_049"
     },
     {
       "scenario_id": "scooter_fall_curve_050",
@@ -926,8 +1040,10 @@
       ],
       "start_station": null,
       "end_station": null,
-      "telemetry_csv": "datasets\\braga\\scooter_fall_curve_050\\telemetry.csv",
-      "truth_json": "datasets\\braga\\scooter_fall_curve_050\\truth.json"
+      "telemetry_csv": "datasets\\braga\\scooters\\scooter_braga_050\\scooter_fall_curve_050\\telemetry.csv",
+      "truth_json": "datasets\\braga\\scooters\\scooter_braga_050\\scooter_fall_curve_050\\truth.json",
+      "vehicle_group": "scooters",
+      "vehicle_folder": "datasets\\braga\\scooters\\scooter_braga_050"
     },
     {
       "scenario_id": "bike_normal_center_009",
@@ -948,8 +1064,10 @@
         "lat": 41.54952,
         "lon": -8.42686
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_center_009\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_center_009\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_009\\bike_normal_center_009\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_009\\bike_normal_center_009\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_009"
     },
     {
       "scenario_id": "bike_normal_commute_010",
@@ -970,8 +1088,10 @@
         "lat": 41.54883,
         "lon": -8.42148
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_commute_010\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_commute_010\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_010\\bike_normal_commute_010\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_010\\bike_normal_commute_010\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_010"
     },
     {
       "scenario_id": "bike_normal_evening_011",
@@ -992,8 +1112,10 @@
         "lat": 41.55323,
         "lon": -8.42706
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_evening_011\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_evening_011\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_011\\bike_normal_evening_011\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_011\\bike_normal_evening_011\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_011"
     },
     {
       "scenario_id": "bike_hard_brake_center_012",
@@ -1016,8 +1138,10 @@
         "lat": 41.55172,
         "lon": -8.4229
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_center_012\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_center_012\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_012\\bike_hard_brake_center_012\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_012\\bike_hard_brake_center_012\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_012"
     },
     {
       "scenario_id": "bike_hard_brake_crosswalk_013",
@@ -1040,8 +1164,10 @@
         "lat": 41.55172,
         "lon": -8.4229
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_crosswalk_013\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_crosswalk_013\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_013\\bike_hard_brake_crosswalk_013\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_013\\bike_hard_brake_crosswalk_013\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_013"
     },
     {
       "scenario_id": "bike_fall_accident_center_014",
@@ -1064,8 +1190,10 @@
         "lat": 41.55383,
         "lon": -8.41226
       },
-      "telemetry_csv": "datasets\\braga\\bike_fall_accident_center_014\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_fall_accident_center_014\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_014\\bike_fall_accident_center_014\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_014\\bike_fall_accident_center_014\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_014"
     },
     {
       "scenario_id": "bike_traffic_jam_center_015",
@@ -1088,8 +1216,10 @@
         "lat": 41.54883,
         "lon": -8.42148
       },
-      "telemetry_csv": "datasets\\braga\\bike_traffic_jam_center_015\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_traffic_jam_center_015\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_015\\bike_traffic_jam_center_015\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_015\\bike_traffic_jam_center_015\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_015"
     },
     {
       "scenario_id": "bike_obstacle_risk_center_016",
@@ -1112,8 +1242,10 @@
         "lat": 41.54883,
         "lon": -8.42148
       },
-      "telemetry_csv": "datasets\\braga\\bike_obstacle_risk_center_016\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_obstacle_risk_center_016\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_016\\bike_obstacle_risk_center_016\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_016\\bike_obstacle_risk_center_016\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_016"
     },
     {
       "scenario_id": "bike_mixed_brake_jam_center_017",
@@ -1137,8 +1269,10 @@
         "lat": 41.54767,
         "lon": -8.43402
       },
-      "telemetry_csv": "datasets\\braga\\bike_mixed_brake_jam_center_017\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_mixed_brake_jam_center_017\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_017\\bike_mixed_brake_jam_center_017\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_017\\bike_mixed_brake_jam_center_017\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_017"
     },
     {
       "scenario_id": "bike_normal_center_018",
@@ -1159,8 +1293,10 @@
         "lat": 41.54366,
         "lon": -8.42308
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_center_018\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_center_018\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_018\\bike_normal_center_018\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_018\\bike_normal_center_018\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_018"
     },
     {
       "scenario_id": "bike_normal_commute_019",
@@ -1181,8 +1317,10 @@
         "lat": 41.55172,
         "lon": -8.4229
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_commute_019\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_commute_019\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_019\\bike_normal_commute_019\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_019\\bike_normal_commute_019\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_019"
     },
     {
       "scenario_id": "bike_normal_evening_020",
@@ -1203,8 +1341,10 @@
         "lat": 41.54952,
         "lon": -8.42686
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_evening_020\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_evening_020\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_020\\bike_normal_evening_020\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_020\\bike_normal_evening_020\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_020"
     },
     {
       "scenario_id": "bike_hard_brake_center_021",
@@ -1227,8 +1367,10 @@
         "lat": 41.55383,
         "lon": -8.41226
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_center_021\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_center_021\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_021\\bike_hard_brake_center_021\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_021\\bike_hard_brake_center_021\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_021"
     },
     {
       "scenario_id": "bike_hard_brake_crosswalk_022",
@@ -1251,8 +1393,10 @@
         "lat": 41.55795,
         "lon": -8.40787
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_crosswalk_022\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_crosswalk_022\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_022\\bike_hard_brake_crosswalk_022\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_022\\bike_hard_brake_crosswalk_022\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_022"
     },
     {
       "scenario_id": "bike_fall_accident_center_023",
@@ -1275,8 +1419,10 @@
         "lat": 41.54952,
         "lon": -8.42686
       },
-      "telemetry_csv": "datasets\\braga\\bike_fall_accident_center_023\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_fall_accident_center_023\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_023\\bike_fall_accident_center_023\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_023\\bike_fall_accident_center_023\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_023"
     },
     {
       "scenario_id": "bike_traffic_jam_center_024",
@@ -1299,8 +1445,10 @@
         "lat": 41.54883,
         "lon": -8.42148
       },
-      "telemetry_csv": "datasets\\braga\\bike_traffic_jam_center_024\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_traffic_jam_center_024\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_024\\bike_traffic_jam_center_024\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_024\\bike_traffic_jam_center_024\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_024"
     },
     {
       "scenario_id": "bike_obstacle_risk_center_025",
@@ -1323,8 +1471,10 @@
         "lat": 41.55323,
         "lon": -8.42706
       },
-      "telemetry_csv": "datasets\\braga\\bike_obstacle_risk_center_025\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_obstacle_risk_center_025\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_025\\bike_obstacle_risk_center_025\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_025\\bike_obstacle_risk_center_025\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_025"
     },
     {
       "scenario_id": "bike_mixed_brake_jam_center_026",
@@ -1348,8 +1498,10 @@
         "lat": 41.55172,
         "lon": -8.4229
       },
-      "telemetry_csv": "datasets\\braga\\bike_mixed_brake_jam_center_026\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_mixed_brake_jam_center_026\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_026\\bike_mixed_brake_jam_center_026\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_026\\bike_mixed_brake_jam_center_026\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_026"
     },
     {
       "scenario_id": "bike_normal_center_027",
@@ -1370,8 +1522,10 @@
         "lat": 41.55172,
         "lon": -8.4229
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_center_027\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_center_027\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_027\\bike_normal_center_027\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_027\\bike_normal_center_027\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_027"
     },
     {
       "scenario_id": "bike_normal_commute_028",
@@ -1392,8 +1546,10 @@
         "lat": 41.55383,
         "lon": -8.41226
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_commute_028\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_commute_028\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_028\\bike_normal_commute_028\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_028\\bike_normal_commute_028\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_028"
     },
     {
       "scenario_id": "bike_normal_evening_029",
@@ -1414,8 +1570,10 @@
         "lat": 41.54883,
         "lon": -8.42148
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_evening_029\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_evening_029\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_029\\bike_normal_evening_029\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_029\\bike_normal_evening_029\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_029"
     },
     {
       "scenario_id": "bike_hard_brake_center_030",
@@ -1438,8 +1596,10 @@
         "lat": 41.54883,
         "lon": -8.42148
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_center_030\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_center_030\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_030\\bike_hard_brake_center_030\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_030\\bike_hard_brake_center_030\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_030"
     },
     {
       "scenario_id": "bike_hard_brake_crosswalk_031",
@@ -1462,8 +1622,10 @@
         "lat": 41.54767,
         "lon": -8.43402
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_crosswalk_031\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_crosswalk_031\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_031\\bike_hard_brake_crosswalk_031\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_031\\bike_hard_brake_crosswalk_031\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_031"
     },
     {
       "scenario_id": "bike_fall_accident_center_032",
@@ -1486,8 +1648,10 @@
         "lat": 41.54366,
         "lon": -8.42308
       },
-      "telemetry_csv": "datasets\\braga\\bike_fall_accident_center_032\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_fall_accident_center_032\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_032\\bike_fall_accident_center_032\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_032\\bike_fall_accident_center_032\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_032"
     },
     {
       "scenario_id": "bike_traffic_jam_center_033",
@@ -1510,8 +1674,10 @@
         "lat": 41.55172,
         "lon": -8.4229
       },
-      "telemetry_csv": "datasets\\braga\\bike_traffic_jam_center_033\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_traffic_jam_center_033\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_033\\bike_traffic_jam_center_033\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_033\\bike_traffic_jam_center_033\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_033"
     },
     {
       "scenario_id": "bike_obstacle_risk_center_034",
@@ -1534,8 +1700,10 @@
         "lat": 41.54952,
         "lon": -8.42686
       },
-      "telemetry_csv": "datasets\\braga\\bike_obstacle_risk_center_034\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_obstacle_risk_center_034\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_034\\bike_obstacle_risk_center_034\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_034\\bike_obstacle_risk_center_034\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_034"
     },
     {
       "scenario_id": "bike_mixed_brake_jam_center_035",
@@ -1559,8 +1727,10 @@
         "lat": 41.55383,
         "lon": -8.41226
       },
-      "telemetry_csv": "datasets\\braga\\bike_mixed_brake_jam_center_035\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_mixed_brake_jam_center_035\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_035\\bike_mixed_brake_jam_center_035\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_035\\bike_mixed_brake_jam_center_035\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_035"
     },
     {
       "scenario_id": "bike_normal_center_036",
@@ -1581,8 +1751,10 @@
         "lat": 41.55795,
         "lon": -8.40787
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_center_036\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_center_036\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_036\\bike_normal_center_036\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_036\\bike_normal_center_036\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_036"
     },
     {
       "scenario_id": "bike_normal_commute_037",
@@ -1603,8 +1775,10 @@
         "lat": 41.54952,
         "lon": -8.42686
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_commute_037\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_commute_037\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_037\\bike_normal_commute_037\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_037\\bike_normal_commute_037\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_037"
     },
     {
       "scenario_id": "bike_normal_evening_038",
@@ -1625,8 +1799,10 @@
         "lat": 41.54883,
         "lon": -8.42148
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_evening_038\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_evening_038\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_038\\bike_normal_evening_038\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_038\\bike_normal_evening_038\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_038"
     },
     {
       "scenario_id": "bike_hard_brake_center_039",
@@ -1649,8 +1825,10 @@
         "lat": 41.55323,
         "lon": -8.42706
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_center_039\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_center_039\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_039\\bike_hard_brake_center_039\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_039\\bike_hard_brake_center_039\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_039"
     },
     {
       "scenario_id": "bike_hard_brake_crosswalk_040",
@@ -1673,8 +1851,10 @@
         "lat": 41.55172,
         "lon": -8.4229
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_crosswalk_040\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_crosswalk_040\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_040\\bike_hard_brake_crosswalk_040\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_040\\bike_hard_brake_crosswalk_040\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_040"
     },
     {
       "scenario_id": "bike_fall_accident_center_041",
@@ -1697,8 +1877,10 @@
         "lat": 41.55172,
         "lon": -8.4229
       },
-      "telemetry_csv": "datasets\\braga\\bike_fall_accident_center_041\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_fall_accident_center_041\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_041\\bike_fall_accident_center_041\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_041\\bike_fall_accident_center_041\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_041"
     },
     {
       "scenario_id": "bike_traffic_jam_center_042",
@@ -1721,8 +1903,10 @@
         "lat": 41.55383,
         "lon": -8.41226
       },
-      "telemetry_csv": "datasets\\braga\\bike_traffic_jam_center_042\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_traffic_jam_center_042\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_042\\bike_traffic_jam_center_042\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_042\\bike_traffic_jam_center_042\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_042"
     },
     {
       "scenario_id": "bike_obstacle_risk_center_043",
@@ -1745,8 +1929,10 @@
         "lat": 41.54883,
         "lon": -8.42148
       },
-      "telemetry_csv": "datasets\\braga\\bike_obstacle_risk_center_043\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_obstacle_risk_center_043\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_043\\bike_obstacle_risk_center_043\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_043\\bike_obstacle_risk_center_043\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_043"
     },
     {
       "scenario_id": "bike_mixed_brake_jam_center_044",
@@ -1770,8 +1956,10 @@
         "lat": 41.54883,
         "lon": -8.42148
       },
-      "telemetry_csv": "datasets\\braga\\bike_mixed_brake_jam_center_044\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_mixed_brake_jam_center_044\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_044\\bike_mixed_brake_jam_center_044\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_044\\bike_mixed_brake_jam_center_044\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_044"
     },
     {
       "scenario_id": "bike_normal_center_045",
@@ -1792,8 +1980,10 @@
         "lat": 41.54767,
         "lon": -8.43402
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_center_045\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_center_045\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_045\\bike_normal_center_045\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_045\\bike_normal_center_045\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_045"
     },
     {
       "scenario_id": "bike_normal_commute_046",
@@ -1814,8 +2004,10 @@
         "lat": 41.54366,
         "lon": -8.42308
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_commute_046\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_commute_046\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_046\\bike_normal_commute_046\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_046\\bike_normal_commute_046\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_046"
     },
     {
       "scenario_id": "bike_normal_evening_047",
@@ -1836,8 +2028,10 @@
         "lat": 41.55172,
         "lon": -8.4229
       },
-      "telemetry_csv": "datasets\\braga\\bike_normal_evening_047\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_normal_evening_047\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_047\\bike_normal_evening_047\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_047\\bike_normal_evening_047\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_047"
     },
     {
       "scenario_id": "bike_hard_brake_center_048",
@@ -1860,8 +2054,10 @@
         "lat": 41.54952,
         "lon": -8.42686
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_center_048\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_center_048\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_048\\bike_hard_brake_center_048\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_048\\bike_hard_brake_center_048\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_048"
     },
     {
       "scenario_id": "bike_hard_brake_crosswalk_049",
@@ -1884,8 +2080,10 @@
         "lat": 41.55383,
         "lon": -8.41226
       },
-      "telemetry_csv": "datasets\\braga\\bike_hard_brake_crosswalk_049\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_hard_brake_crosswalk_049\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_049\\bike_hard_brake_crosswalk_049\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_049\\bike_hard_brake_crosswalk_049\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_049"
     },
     {
       "scenario_id": "bike_fall_accident_center_050",
@@ -1908,8 +2106,974 @@
         "lat": 41.55795,
         "lon": -8.40787
       },
-      "telemetry_csv": "datasets\\braga\\bike_fall_accident_center_050\\telemetry.csv",
-      "truth_json": "datasets\\braga\\bike_fall_accident_center_050\\truth.json"
+      "telemetry_csv": "datasets\\braga\\bicycles\\bike_braga_050\\bike_fall_accident_center_050\\telemetry.csv",
+      "truth_json": "datasets\\braga\\bicycles\\bike_braga_050\\bike_fall_accident_center_050\\truth.json",
+      "vehicle_group": "bicycles",
+      "vehicle_folder": "datasets\\braga\\bicycles\\bike_braga_050"
     }
-  ]
+  ],
+  "structure_version": "2.0",
+  "folder_layout": {
+    "root": "datasets/braga",
+    "groups": [
+      "bicycles",
+      "scooters"
+    ],
+    "pattern": "<vehicle_group>/<device_id>/<scenario_id>/{telemetry.csv,truth.json}"
+  },
+  "vehicles": {
+    "scooter": [
+      {
+        "device_id": "scooter_braga_001",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "normal_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_001"
+      },
+      {
+        "device_id": "scooter_braga_002",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "normal_stop_and_go_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_002"
+      },
+      {
+        "device_id": "scooter_braga_003",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "normal_rough_pavement_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_003"
+      },
+      {
+        "device_id": "scooter_braga_004",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "hard_brake_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_004"
+      },
+      {
+        "device_id": "scooter_braga_005",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "fall_accident_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_005"
+      },
+      {
+        "device_id": "scooter_braga_006",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "traffic_jam_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_006"
+      },
+      {
+        "device_id": "scooter_braga_007",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "mixed_brake_jam_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_007"
+      },
+      {
+        "device_id": "scooter_braga_008",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "normal_short_center_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_008"
+      },
+      {
+        "device_id": "scooter_braga_009",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "normal_commute_002"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_009"
+      },
+      {
+        "device_id": "scooter_braga_010",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "normal_long_cross_city_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_010"
+      },
+      {
+        "device_id": "scooter_braga_011",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "normal_evening_return_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_011"
+      },
+      {
+        "device_id": "scooter_braga_012",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "normal_peripheral_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_012"
+      },
+      {
+        "device_id": "scooter_braga_013",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "hard_brake_roundabout_002"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_013"
+      },
+      {
+        "device_id": "scooter_braga_014",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "hard_brake_crosswalk_003"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_014"
+      },
+      {
+        "device_id": "scooter_braga_015",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "fall_accident_curve_002"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_015"
+      },
+      {
+        "device_id": "scooter_braga_016",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "fall_accident_long_003"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_016"
+      },
+      {
+        "device_id": "scooter_braga_017",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "traffic_jam_center_002"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_017"
+      },
+      {
+        "device_id": "scooter_braga_018",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "traffic_jam_long_003"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_018"
+      },
+      {
+        "device_id": "scooter_braga_019",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "mixed_brake_jam_002"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_019"
+      },
+      {
+        "device_id": "scooter_braga_020",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "mixed_brake_jam_003"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_020"
+      },
+      {
+        "device_id": "scooter_braga_021",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "obstacle_risk_001"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_021"
+      },
+      {
+        "device_id": "scooter_braga_022",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_normal_center_022"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_022"
+      },
+      {
+        "device_id": "scooter_braga_023",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_normal_commute_023"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_023"
+      },
+      {
+        "device_id": "scooter_braga_024",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_normal_long_024"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_024"
+      },
+      {
+        "device_id": "scooter_braga_025",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_hard_brake_025"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_025"
+      },
+      {
+        "device_id": "scooter_braga_026",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_hard_brake_crossing_026"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_026"
+      },
+      {
+        "device_id": "scooter_braga_027",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_fall_accident_027"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_027"
+      },
+      {
+        "device_id": "scooter_braga_028",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_fall_curve_028"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_028"
+      },
+      {
+        "device_id": "scooter_braga_029",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_traffic_jam_029"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_029"
+      },
+      {
+        "device_id": "scooter_braga_030",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_traffic_jam_long_030"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_030"
+      },
+      {
+        "device_id": "scooter_braga_031",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_obstacle_risk_031"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_031"
+      },
+      {
+        "device_id": "scooter_braga_032",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_mixed_brake_jam_032"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_032"
+      },
+      {
+        "device_id": "scooter_braga_033",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_normal_center_033"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_033"
+      },
+      {
+        "device_id": "scooter_braga_034",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_normal_commute_034"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_034"
+      },
+      {
+        "device_id": "scooter_braga_035",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_normal_long_035"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_035"
+      },
+      {
+        "device_id": "scooter_braga_036",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_hard_brake_036"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_036"
+      },
+      {
+        "device_id": "scooter_braga_037",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_hard_brake_crossing_037"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_037"
+      },
+      {
+        "device_id": "scooter_braga_038",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_fall_accident_038"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_038"
+      },
+      {
+        "device_id": "scooter_braga_039",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_fall_curve_039"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_039"
+      },
+      {
+        "device_id": "scooter_braga_040",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_traffic_jam_040"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_040"
+      },
+      {
+        "device_id": "scooter_braga_041",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_traffic_jam_long_041"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_041"
+      },
+      {
+        "device_id": "scooter_braga_042",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_obstacle_risk_042"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_042"
+      },
+      {
+        "device_id": "scooter_braga_043",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_mixed_brake_jam_043"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_043"
+      },
+      {
+        "device_id": "scooter_braga_044",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_normal_center_044"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_044"
+      },
+      {
+        "device_id": "scooter_braga_045",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_normal_commute_045"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_045"
+      },
+      {
+        "device_id": "scooter_braga_046",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_normal_long_046"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_046"
+      },
+      {
+        "device_id": "scooter_braga_047",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_hard_brake_047"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_047"
+      },
+      {
+        "device_id": "scooter_braga_048",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_hard_brake_crossing_048"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_048"
+      },
+      {
+        "device_id": "scooter_braga_049",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_fall_accident_049"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_049"
+      },
+      {
+        "device_id": "scooter_braga_050",
+        "vehicle_type": "scooter",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "scooter_fall_curve_050"
+        ],
+        "folder": "datasets\\braga\\scooters\\scooter_braga_050"
+      }
+    ],
+    "bicycle": [
+      {
+        "device_id": "bike_braga_001",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_center_001"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_001"
+      },
+      {
+        "device_id": "bike_braga_002",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_commute_center_002"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_002"
+      },
+      {
+        "device_id": "bike_braga_003",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_evening_return_003"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_003"
+      },
+      {
+        "device_id": "bike_braga_004",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_center_001"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_004"
+      },
+      {
+        "device_id": "bike_braga_005",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_fall_accident_center_001"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_005"
+      },
+      {
+        "device_id": "bike_braga_006",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_traffic_jam_center_001"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_006"
+      },
+      {
+        "device_id": "bike_braga_007",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_obstacle_risk_center_001"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_007"
+      },
+      {
+        "device_id": "bike_braga_008",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_mixed_brake_jam_center_001"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_008"
+      },
+      {
+        "device_id": "bike_braga_009",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_center_009"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_009"
+      },
+      {
+        "device_id": "bike_braga_010",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_commute_010"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_010"
+      },
+      {
+        "device_id": "bike_braga_011",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_evening_011"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_011"
+      },
+      {
+        "device_id": "bike_braga_012",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_center_012"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_012"
+      },
+      {
+        "device_id": "bike_braga_013",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_crosswalk_013"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_013"
+      },
+      {
+        "device_id": "bike_braga_014",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_fall_accident_center_014"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_014"
+      },
+      {
+        "device_id": "bike_braga_015",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_traffic_jam_center_015"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_015"
+      },
+      {
+        "device_id": "bike_braga_016",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_obstacle_risk_center_016"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_016"
+      },
+      {
+        "device_id": "bike_braga_017",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_mixed_brake_jam_center_017"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_017"
+      },
+      {
+        "device_id": "bike_braga_018",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_center_018"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_018"
+      },
+      {
+        "device_id": "bike_braga_019",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_commute_019"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_019"
+      },
+      {
+        "device_id": "bike_braga_020",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_evening_020"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_020"
+      },
+      {
+        "device_id": "bike_braga_021",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_center_021"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_021"
+      },
+      {
+        "device_id": "bike_braga_022",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_crosswalk_022"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_022"
+      },
+      {
+        "device_id": "bike_braga_023",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_fall_accident_center_023"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_023"
+      },
+      {
+        "device_id": "bike_braga_024",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_traffic_jam_center_024"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_024"
+      },
+      {
+        "device_id": "bike_braga_025",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_obstacle_risk_center_025"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_025"
+      },
+      {
+        "device_id": "bike_braga_026",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_mixed_brake_jam_center_026"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_026"
+      },
+      {
+        "device_id": "bike_braga_027",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_center_027"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_027"
+      },
+      {
+        "device_id": "bike_braga_028",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_commute_028"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_028"
+      },
+      {
+        "device_id": "bike_braga_029",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_evening_029"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_029"
+      },
+      {
+        "device_id": "bike_braga_030",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_center_030"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_030"
+      },
+      {
+        "device_id": "bike_braga_031",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_crosswalk_031"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_031"
+      },
+      {
+        "device_id": "bike_braga_032",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_fall_accident_center_032"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_032"
+      },
+      {
+        "device_id": "bike_braga_033",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_traffic_jam_center_033"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_033"
+      },
+      {
+        "device_id": "bike_braga_034",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_obstacle_risk_center_034"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_034"
+      },
+      {
+        "device_id": "bike_braga_035",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_mixed_brake_jam_center_035"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_035"
+      },
+      {
+        "device_id": "bike_braga_036",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_center_036"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_036"
+      },
+      {
+        "device_id": "bike_braga_037",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_commute_037"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_037"
+      },
+      {
+        "device_id": "bike_braga_038",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_evening_038"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_038"
+      },
+      {
+        "device_id": "bike_braga_039",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_center_039"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_039"
+      },
+      {
+        "device_id": "bike_braga_040",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_crosswalk_040"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_040"
+      },
+      {
+        "device_id": "bike_braga_041",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_fall_accident_center_041"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_041"
+      },
+      {
+        "device_id": "bike_braga_042",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_traffic_jam_center_042"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_042"
+      },
+      {
+        "device_id": "bike_braga_043",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_obstacle_risk_center_043"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_043"
+      },
+      {
+        "device_id": "bike_braga_044",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_mixed_brake_jam_center_044"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_044"
+      },
+      {
+        "device_id": "bike_braga_045",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_center_045"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_045"
+      },
+      {
+        "device_id": "bike_braga_046",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_commute_046"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_046"
+      },
+      {
+        "device_id": "bike_braga_047",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_normal_evening_047"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_047"
+      },
+      {
+        "device_id": "bike_braga_048",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_center_048"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_048"
+      },
+      {
+        "device_id": "bike_braga_049",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_hard_brake_crosswalk_049"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_049"
+      },
+      {
+        "device_id": "bike_braga_050",
+        "vehicle_type": "bicycle",
+        "scenario_count": 1,
+        "scenario_ids": [
+          "bike_fall_accident_center_050"
+        ],
+        "folder": "datasets\\braga\\bicycles\\bike_braga_050"
+      }
+    ]
+  },
+  "dataset_name": "Braga Micromobility Simulation Dataset",
+  "dataset_slug": "braga-micromobility-simulation-dataset",
+  "version": "2.0.0",
+  "description": "Synthetic IoT telemetry dataset for shared bicycles and scooters operating in Braga, Portugal, designed for backend ingestion, event detection validation, dashboard playback, and reproducible demos.",
+  "keywords": [
+    "IoT",
+    "micromobility",
+    "smart city",
+    "bicycle",
+    "scooter",
+    "telemetry",
+    "event detection",
+    "Braga",
+    "Portugal"
+  ],
+  "publication": {
+    "target_platforms": [
+      "GitHub",
+      "Zenodo"
+    ],
+    "archive_root": "datasets/braga",
+    "primary_readme": "datasets/braga/README.md",
+    "manifest_path": "datasets/braga/manifest.json",
+    "layout": "vehicle_group/device_id/scenario_id",
+    "notes": [
+      "Each scenario folder contains telemetry.csv and truth.json.",
+      "Vehicles are grouped first by modality and then by stable device identifier.",
+      "Paths recorded in this manifest are repository-relative for reproducible packaging."
+    ]
+  },
+  "scenario_schema": {
+    "vehicle_group_values": [
+      "bicycles",
+      "scooters"
+    ],
+    "scenario_contents": [
+      "telemetry.csv",
+      "truth.json"
+    ],
+    "required_dataset_fields": [
+      "scenario_id",
+      "device_id",
+      "vehicle_type",
+      "rows",
+      "telemetry_csv",
+      "truth_json",
+      "event_types"
+    ]
+  }
 }
