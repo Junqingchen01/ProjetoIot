@@ -1,40 +1,36 @@
 # ProjetoIoT Dataset Package
 
-This folder packages the Braga micromobility dataset in a publication-friendly structure.
-It keeps the original project dataset path intact for code compatibility, while also adding
-clear documentation and a dedicated code snapshot for dataset generation and replay.
+This package contains the Braga micromobility dataset prepared for publication, archival, and reproducible reuse.
+The dataset represents shared scooters and bicycles operating in Braga, Portugal, and was designed for an IoT urban-mobility platform focused on telemetry ingestion, event detection, alert generation, dashboard playback, and system validation.
 
-## Package Layout
+The dataset is synthetic but geographically grounded: routes were generated over real Braga street and cycleway geometry derived from OpenStreetMap through the Overpass API. Sensor values were then synthesized to resemble IoT telemetry collected by connected micromobility vehicles equipped with positioning, inertial, and proximity sensors.
 
-- `braga/`: published dataset contents. In the Zenodo-style sense, this is the `data` folder.
-- `code/`: snapshot copies of the Python scripts used to generate, validate, import, and replay the dataset.
+List of sensor families included in the dataset:
 
-## Why The Dataset Is Structured This Way
+- GPS: latitude, longitude, speed, and positioning accuracy.
+- IMU: three-axis accelerometer and three-axis gyroscope readings.
+- Ultrasonic sensing: front and lateral obstacle distance plus sensor validity.
+- Operational telemetry: battery level, docking state, charging state, and trip/session metadata.
 
-The Braga dataset was designed for an IoT smart-mobility project whose goals include:
+This dataset includes:
 
-- ingesting heterogeneous telemetry from multiple devices;
-- validating event-detection algorithms;
-- demonstrating alerts, QoS, and dashboard playback;
-- supporting repeatable demos and technical evaluation.
+- 1x Braga micromobility dataset with 100 trajectories.
+- 50x scooter scenarios.
+- 50x bicycle scenarios.
+- 1x dataset manifest describing all files, vehicles, and metadata.
+- 1x bicycle-station metadata file for dock-aware scenarios.
+- 1x publication snapshot of the Python code used to generate, validate, import, and replay the dataset.
 
-Because of that, the dataset is organized around **scenarios**, not around long-term real-world fleet history.
-Each dataset sample represents a controlled route with a known behavior pattern, such as normal riding,
-commuting, hard braking, fall/accident simulation, traffic jam, or obstacle-risk detection.
+The package layout is:
 
-This means the dataset should be interpreted as a **validation and demonstration corpus**:
+- `braga/`: the dataset itself.
+- `code/`: copied Python files directly related to dataset generation and reuse.
 
-- `device_id` identifies the simulated vehicle used to carry a scenario;
-- `scenario_id` identifies the behavioral pattern of that route;
-- different vehicle folders may therefore contain different route families by design.
+The `code/` folder contains:
 
-## Included Code Snapshot
+- `generate_braga_datasets.py`: generation of the synthetic Braga scenarios.
+- `validate_braga_datasets.py`: validation of telemetry and expected events.
+- `import_dataset.py`: replay of the dataset into the backend by REST or MQTT.
+- `simulate_fleet.py`: continuous fleet simulation based on the dataset.
 
-The `code/` folder contains publication copies of the scripts most directly related to the dataset:
-
-- `generate_braga_datasets.py`: generates the synthetic Braga scenarios from OSM geometry;
-- `validate_braga_datasets.py`: checks whether truth events and generated telemetry remain consistent;
-- `import_dataset.py`: replays dataset rows into the backend by REST or MQTT;
-- `simulate_fleet.py`: continuously reuses the dataset to emulate a running fleet demo.
-
-These are copied here so the dataset can be understood and reproduced without browsing the full project tree.
+The dataset should be interpreted as a validation and demonstration corpus rather than as long-term historical fleet logging. Different vehicles intentionally carry different behavioral scenarios so that the project can evaluate normal mobility, hard braking, falls, congestion, obstacle risk, and mixed events.

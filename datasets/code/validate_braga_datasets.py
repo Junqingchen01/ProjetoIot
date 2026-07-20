@@ -48,6 +48,25 @@ def _load_detection_with_project_dependencies():
 
 class _FallbackSensorData:
     def __init__(self, **kwargs):
+        defaults = {
+            "session_id": None,
+            "trip_id": None,
+            "lat": None,
+            "lon": None,
+            "speed": None,
+            "accel_x": None,
+            "accel_y": None,
+            "accel_z": None,
+            "gyro_x": None,
+            "gyro_y": None,
+            "gyro_z": None,
+            "range_front_m": None,
+            "range_left_m": None,
+            "ultrasonic_valid": None,
+            "timestamp": None,
+        }
+        for key, value in defaults.items():
+            setattr(self, key, value)
         for key, value in kwargs.items():
             if key == "timestamp" and isinstance(value, str):
                 value = datetime.fromisoformat(value.replace("Z", "+00:00"))
